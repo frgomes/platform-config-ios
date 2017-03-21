@@ -34,3 +34,5 @@ bintrayOrganization := Some("scalajs-react-universe")
 bintrayRepository := "maven"
 
 publishArtifact in Test := false
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0" % Test
+scalaJSStage in Global := FastOptStage
