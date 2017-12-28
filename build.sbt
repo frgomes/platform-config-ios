@@ -32,5 +32,6 @@ bintrayOrganization := Some("scalajs-react-interface")
 bintrayRepository := "maven"
 
 publishArtifact in Test := false
-resolvers += Resolver.bintrayRepo("scalajs-react-interface", "maven")
+resolvers ++= Seq(Resolver.bintrayRepo("scalajs-react-interface", "maven"),
+  Resolver.bintrayRepo("scalajs-plus", "maven"))
 scalaJSStage in Global := FastOptStage
