@@ -4,13 +4,11 @@ name := "platform-config-ios"
 
 enablePlugins(ScalaJSPlugin)
 
-val scala211 = "2.11.11"
+val scala212 = "2.12.4"
 
-val scala212 = "2.12.2"
+scalaVersion := scala212
 
-scalaVersion := scala211
-
-crossScalaVersions := Seq(scala211, scala212)
+crossScalaVersions := Seq(scala212)
 
 scalacOptions ++= Seq(
   "-feature",
@@ -19,7 +17,7 @@ scalacOptions ++= Seq(
   "-language:implicitConversions"
 )
 
-libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.7.9-RC" % Provided
+libraryDependencies += "scalajs-react-interface" %%% "universal" % "2017.12.28-RC" % Provided
 
 //bintray
 resolvers += Resolver.jcenterRepo
